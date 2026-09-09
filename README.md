@@ -1,7 +1,31 @@
-**BLACK-BOX PENETRATION TEST**
+<div align="center">
 
-Ethical Hacking & Cybersecurity | Batch B082
+# CYBERSECURITY BLACK-BOX PENETRATION TEST
 
+**Ethical Hacking & Cybersecurity | Batch B082**
+
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Penetration%20Testing-Black%20Box-0070C0?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Web%20Application%20Security-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/SQL%20Injection-E87500?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Authentication%20Testing-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Metadata%20Analysis-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Database%20Security-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/ExifTool-E87500?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Penetration%20Testing%20Report-238F89?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Networkwalks-B082-C00000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Mosotho%20Thatho-C00000?style=flat-square" />
+</p>
+```
+
+
+---
 | **Password cracker Name <br>(Cybersecurity Professional)** | **Mosotho Thatho**                                               |
 | ---------------------------------------------------------- | ---------------------------------------------------------------- |
 | **Program/Batch**                                          | B082-Networkwalks                                                |
@@ -9,6 +33,7 @@ Ethical Hacking & Cybersecurity | Batch B082
 | **Modules completed**                                      | Initial Access<br>Data Extraction<br>Getting access (DB) |
 | **Clients/Target**                                         | Mediroza General Hospital                                        |
 
+---
 # Executive Summary
 
 This report documents the results of an authorised black-box penetration-testing exercise performed against the Mediroza General Hospital training environment as part of the Networkwalks Ethical Hacking & Cybersecurity programme. The assessment followed the milestone structure supplied for the exercise: initial access to the patient portal, recovery of three protected laboratory reports, analysis of the recovered files, and investigation of the deeper data exposure identified through that analysis.
@@ -25,6 +50,7 @@ The most significant finding occurred during analysis of the decrypted PDFs. Fil
 - The exposed backup contained staff and shareholder/equity tables, including salary and ownership related information.
 - Sensitive records were not reproduced in this report; only the categories and security impact are documented.
 
+---
 # Scope and Methodology
 
 The exercise was conducted as a full black-box penetration test of the authorised Mediroza General Hospital web application in a controlled Networkwalks training environment. The project brief specified a five day assessment and limited testing to the target domain. Social engineering, denial of service activity and testing outside the agreed scope were excluded.
@@ -59,6 +85,7 @@ The exercise was conducted as a full black-box penetration test of the authorise
 - The report deliberately omits passwords, hashes, exact server locations, patient medical information, employee personal identifiers and other sensitive values.
 - The assessment represents a time-bounded training exercise and should not be interpreted as a complete security audit of every hospital system.
 
+---
 # Findings and Proof of Exploitation
 
 The following findings are presented in the order in which the assessment progressed. Screenshots are included as supporting evidence but have been redacted to prevent the report itself from becoming a source of sensitive operational or personal information.
@@ -144,6 +171,7 @@ The assessment therefore confirmed the two M3 objectives: staff salary informati
 - Because the file was exposed through the web environment, an attacker would not necessarily need direct database-server access to obtain the information.
 - The finding represents a major confidentiality failure and substantially increases the impact of the earlier application weaknesses.
 
+---
 # Risk Rating
 
 Ratings below reflect the demonstrated impact in the authorised training environment and the potential confidentiality consequences if equivalent weaknesses existed in a production healthcare system.
@@ -158,6 +186,7 @@ Ratings below reflect the demonstrated impact in the authorised training environ
 **Overall Assessment**  
 CRITICAL. The highest risk issue is the exposed database backup. The findings also demonstrate that application weaknesses and information leakage can combine to create a substantially larger compromise than any single issue considered in isolation.
 
+---
 # Recommendations and Remediation
 
 Remediation should prioritise removal of the exposed backup and then address the weaknesses that enabled the attack path. The recommendations below are ordered by urgency.
@@ -205,6 +234,7 @@ Remediation should prioritise removal of the exposed backup and then address the
 - Monitor and rate-limit repeated document download and password-recovery attempts where appropriate.
 - Apply least privilege so users can access only the reports that belong to their authorised account.
 
+---
 # Conclusion
 
 The Mediroza General Hospital assessment demonstrated the value of approaching a penetration test as a connected investigation rather than a collection of isolated tool exercises. The initial application weakness provided access to the patient portal; the protected documents were then recovered as required by the exercise; and careful examination of the recovered files revealed information that was not visible in the normal document content.
@@ -213,6 +243,7 @@ The most important lesson from the assessment was that security-sensitive inform
 
 The recommended remediation is therefore not limited to patching one vulnerability. The organisation should address secure coding, error handling, document sanitisation, backup management, deployment hygiene, access control and monitoring as a combined security programme.
 
+---
 # Professional Reflection and Lessons Learned
 
 - A successful penetration test requires following evidence from one finding to the next instead of stopping after the first successful access.
@@ -221,3 +252,5 @@ The recommended remediation is therefore not limited to patching one vulnerabili
 - Security tools are most effective when their output is interpreted carefully and verified against the target behaviour.
 - Troubleshooting is part of practical penetration testing; when an initial approach does not work, the tester should review assumptions and use an authorised alternative.
 - Evidence should be collected in a way that proves the finding without unnecessarily publishing sensitive information.
+
+---
