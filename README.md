@@ -28,7 +28,7 @@
 | ---------------------------------------------------------- | ---------------------------------------------------------------- |
 | **Program/Batch**                                          | B082-Networkwalks                                                |
 | **Date**                                                   | 09 September 2026                                                |
-| **Modules completed**                                      | Initial Access<br>Data Extraction<br>Getting access (DB) |
+| **Modules completed**                                      | M1: Initial Access<br>M2: Data Extraction<br>M3: Getting access to DB |
 | **Clients/Target**                                         | Mediroza General Hospital                                        |
 
 ---
