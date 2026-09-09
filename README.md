@@ -92,7 +92,7 @@ The following findings are presented in the order in which the assessment progre
 
 During testing of the patient-portal login, the application returned a detailed database related error in response to crafted authentication input. The response disclosed implementation details that should normally remain server side. Further controlled testing demonstrated that the authentication control could be bypassed within the authorised lab environment, allowing access to the restricted patient-report area.
 
-The important security issue is not the particular test string used during the exercise; it is that user controlled authentication input reached the database layer without sufficient protection and that the resulting database error was exposed to the client.
+The important security issue is not the particular test string used during the exercise, it is that user controlled authentication input reached the database layer without sufficient protection and that the resulting database error was exposed to the client.
 
 <img width="940" height="451" alt="image" src="https://github.com/user-attachments/assets/01ca2dc4-2451-4d8a-b3f3-515a8b6810b3" />
 
@@ -111,7 +111,7 @@ After obtaining access to the restricted patient report area, three encrypted la
 
 <img width="940" height="609" alt="image" src="https://github.com/user-attachments/assets/2950cb18-802c-4ebe-a3c2-10d74a4f18d0" />
 
-<i>Figure 2. Redacted patient portal evidence showing the presence of three protected laboratory reports.</i>
+<i>Figure 2. Redacted patient portal evidence showing the presence of three protected laboratory reports inside the portal.</i>
 
 The next step is to download the PDF files and recover their password using networkwalks tools. The passwords for the first two PDF files was discovered using build-in wordlist, but the third PDF file required the use of custom wordlist. The following screenshots shows the inside of each PDF file.
 
