@@ -22,8 +22,6 @@
   <img src="https://img.shields.io/badge/Networkwalks-B082-C00000?style=flat-square" />
   <img src="https://img.shields.io/badge/Mosotho%20Thatho-C00000?style=flat-square" />
 </p>
-```
-
 
 ---
 | **Password cracker Name <br>(Cybersecurity Professional)** | **Mosotho Thatho**                                               |
